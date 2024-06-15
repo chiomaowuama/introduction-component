@@ -25,17 +25,20 @@
         <div class="trail">
           <p><span>Try it free 7 days </span>then $20/mo. thereafter</p>
         </div>
-        <div class="the-form">
-          <input type="text" name="" id="" placeholder="First Name" />
-          <input type="text" name="" id="" placeholder="Last Name" />
-          <input type="email" name="" id="" placeholder="Email Address" />
-          <input type="password" name="" id="" placeholder="Password" />
-          <button>CLAIM YOUR FREE TRIAL</button>
+        <form class="the-form" onclick="submits(event)">
+          <input type="text" name="" id="firstname" placeholder="First Name" />
+          <span id="errorfirst" class="errorspan"></span>
+
+          <input type="text" name="" id="secondname" placeholder="Last Name" />
+          <span id="errorsec" class="errorspan"></span>
+          <input type="email" name="" id="emails" placeholder="Email Address" />
+          <input type="password" name="" id="password" placeholder="Password" />
+          <button type="submit">CLAIM YOUR FREE TRIAL</button>
           <p>
             By clicking the button, you are agreeing to our
             <span> Terms and Services</span>
           </p>
-        </div>
+        </form>
       </div>
     </div>
     <script src="script.js"></script>
