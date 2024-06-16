@@ -88,7 +88,28 @@ body {
   width: 90%;
   margin: 0 auto;
   border: 1px solid hsl(249, 10%, 26%);
+  background-color: white;
 }
+
+/* Style autofilled input fields */
+.the-form input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset !important; /* Apply background color */
+  box-shadow: 0 0 0 1000px #fff inset !important; /* Apply background color */
+  -webkit-text-fill-color: #000 !important; /* Apply text color */
+  border: 1px solid #4caf50 !important; /* Change border color */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Change the outline thickness when the input is focused */
+.the-form input:focus {
+  outline: 2px solid #4caf50; /* Green outline */
+}
+
+/* Change the background color for non-autofilled inputs */
+.the-form input:not(:-webkit-autofill) {
+  background-color: #fff; /* Light blue background for non-autofilled inputs */
+}
+/* nothung to change */
 .the-form button {
   padding: 3% 0;
   background-color: hsl(154, 65%, 40%);
@@ -115,4 +136,10 @@ body {
 }
 .errorspan {
   color: red;
+  font-size: 10px;
+  margin-top: -3%;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin: 0 auto; */
 }
