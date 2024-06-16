@@ -358,8 +358,9 @@ body {
     align-items: center;
     width: 90%;
     height: 90%;
-    margin: 10% 0;
+    margin: 3% 0;
     gap: 2rem;
+
   }
   .text-area {
     width: 100%;
@@ -371,16 +372,16 @@ body {
     gap: 2rem;
   }
   .text-area h1 {
-    font-size: 35px;
+    font-size: 65px;
     text-align: center;
     font-weight: 700;
-    line-height: 35px;
+    line-height: 1.3em;
   }
   .text-area p {
-    font-size: 17px;
+    font-size: 30px;
     text-align: center;
-    width: 95%;
-    line-height: 1.8rem;
+    width: 80%;
+    line-height: 1.4em;
   }
   .trail-form {
     width: 100%;
@@ -388,7 +389,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2em;
     margin-top: 7%;
   }
   .trail {
@@ -405,9 +406,9 @@ body {
     cursor: pointer;
   }
   .trail p {
-    width: 68%;
+    width: 90%;
     margin: auto;
-    font-size: 17px;
+    font-size: 25px;
   }
   .trail:hover {
     background-color: hsl(246, 38%, 68%);
@@ -425,11 +426,11 @@ body {
     background-color: white;
     border-radius: 10px;
     border: none;
-    gap: 1rem;
+    gap: 1.7em;
   }
   .the-form input {
-    font-size: 15px;
-    padding: 18px 10px;
+    font-size: 25px;
+    padding: 28px 20px;
     border-radius: 5px;
     width: 85%;
     margin: 0 auto;
@@ -463,7 +464,7 @@ body {
     color: white;
     cursor: pointer;
     border-radius: 10px;
-    font-size: 13px;
+    font-size: 25px;
     border-radius: 5px;
     width: 95%;
     margin: 0 auto;
@@ -478,7 +479,7 @@ body {
   }
   .the-form p {
     color: hsl(249, 10%, 26%);
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
   }
   .the-form p span {
