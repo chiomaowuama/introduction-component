@@ -64,15 +64,25 @@ function submits(event) {
   if (!isValid) {
     return;
   }
+
   myFunction(result);
   //   console.log("Form submitted with data:", result);
 }
 function myFunction(result) {
-  console.log(result);
   let myPopup = document.getElementById("myPopup");
-  let popinfo = myPopup.classList.toggle("show");
-  let bye = (popinfo.innerHTML = result);
-  console.log(bye);
-  //   hello.classList.toggle("show");
-  //   innerHTML = result;
+  myPopup.innerHTML =
+    "firstname" +
+    ": " +
+    result.firstname +
+    "<br>" +
+    "surnname" +
+    ": " +
+    result.surnname +
+    "<br>" +
+    "email" +
+    ": " +
+    result.email;
+  myPopup.classList.toggle("show");
 }
+//   console.log(myPopup);
+// }

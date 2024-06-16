@@ -360,7 +360,6 @@ body {
     height: 90%;
     margin: 3% 0;
     gap: 2rem;
-
   }
   .text-area {
     width: 100%;
@@ -488,12 +487,11 @@ body {
   }
   .errorspan {
     color: red;
-    font-size: 10px;
+    font-size: 15px;
     margin-top: -3%;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     /* margin: 0 auto; */
   }
-}
 }
