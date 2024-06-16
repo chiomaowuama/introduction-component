@@ -69,5 +69,6 @@ function submits(event) {
   if (!isValid) {
     return;
   }
-  console.log("Form submitted with data:", result);
+  alert(result);
+  //   console.log("Form submitted with data:", result);
 }

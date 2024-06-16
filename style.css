@@ -62,12 +62,16 @@ body {
   background-color: hsl(248, 32%, 49%);
   border-radius: 10px;
   width: 90%;
+  box-shadow: 1px 7px 3px hsla(249, 10%, 26%, 0.384);
   /* margin: 0 auto; */
   /* margin-bottom: 1rem; */
   cursor: pointer;
 }
 .trail:hover {
   background-color: hsl(246, 38%, 68%);
+}
+.trail:active {
+  transform: translateY(4px);
 }
 .the-form {
   display: flex;
@@ -121,9 +125,14 @@ body {
   border-radius: 5px;
   width: 95%;
   margin: 0 auto;
+  box-shadow: 1px 5px 3px hsla(249, 10%, 26%, 0.384);
 }
 .the-form button:hover {
   background-color: hsl(154, 59%, 51%);
+}
+.the-form button:active {
+  background-color: hsl(154, 59%, 51%);
+  transform: translateY(4px);
 }
 .the-form p {
   color: hsl(249, 10%, 26%);
