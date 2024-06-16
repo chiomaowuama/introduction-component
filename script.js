@@ -1,8 +1,3 @@
-// let Fname = document.getElementById("firstname").value;
-// let Sname = document.getElementById("secondname").value;
-// let Emailad = document.getElementById("emails").value;
-// let Passwords = document.getElementById("password").value;
-// console.log(Fname  + ", " Sname, +  Emailad + Passwords)
 function submits(event) {
   event.preventDefault();
   let Fname = document.getElementById("firstname").value;
@@ -69,6 +64,15 @@ function submits(event) {
   if (!isValid) {
     return;
   }
-  alert(result);
+  myFunction(result);
   //   console.log("Form submitted with data:", result);
+}
+function myFunction(result) {
+  console.log(result);
+  let myPopup = document.getElementById("myPopup");
+  let popinfo = myPopup.classList.toggle("show");
+  let bye = (popinfo.innerHTML = result);
+  console.log(bye);
+  //   hello.classList.toggle("show");
+  //   innerHTML = result;
 }
