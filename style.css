@@ -85,6 +85,9 @@ body {
   /* margin-bottom: 1rem; */
   cursor: pointer;
 }
+.trail p span {
+  font-weight: 700;
+}
 .trail:hover {
   background-color: hsl(246, 38%, 68%);
 }
@@ -112,19 +115,23 @@ body {
   border: 1px solid hsl(249, 10%, 26%);
   background-color: white;
 }
+.the-form input::placeholder {
+  color: hsl(249, 10%, 26%);
+  font-weight: 700;
+}
 
 /* Style autofilled input fields */
 .the-form input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px #fff inset !important; /* Apply background color */
   box-shadow: 0 0 0 1000px #fff inset !important; /* Apply background color */
   -webkit-text-fill-color: #000 !important; /* Apply text color */
-  border: 1px solid #4caf50 !important; /* Change border color */
+  border: 1px solid hsl(249, 10%, 26%) !important; /* Change border color */
   border-radius: 5px; /* Rounded corners */
 }
 
 /* Change the outline thickness when the input is focused */
 .the-form input:focus {
-  outline: 2px solid #4caf50; /* Green outline */
+  outline: 1px solid hsl(246, 38%, 68%); /* Green outline */
 }
 
 /* Change the background color for non-autofilled inputs */
@@ -169,4 +176,323 @@ body {
   margin-left: auto;
   margin-right: auto;
   /* margin: 0 auto; */
+}
+/* phone */
+@media only screen and (min-width: 200px) and (max-width: 767px) and (orientation: portrait) {
+  body {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "poppins";
+    background-image: url("assets/bg-intro-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 10%;
+    background-color: hsl(0, 100%, 74%);
+    padding: 10% 0;
+  }
+  /* the main work */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    margin: 10% 0;
+    gap: 2rem;
+  }
+  .text-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 2rem;
+  }
+  .text-area h1 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 35px;
+  }
+  .text-area p {
+    font-size: 17px;
+    text-align: center;
+    width: 95%;
+    line-height: 1.8rem;
+  }
+  .trail-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 7%;
+  }
+  .trail {
+    padding: 5% 9px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 1px 7px 3px hsla(249, 10%, 26%, 0.384);
+    /* margin: 0 auto; */
+    /* margin-bottom: 1rem; */
+    cursor: pointer;
+  }
+  .trail p {
+    width: 68%;
+    margin: auto;
+    font-size: 17px;
+  }
+  .trail:hover {
+    background-color: hsl(246, 38%, 68%);
+  }
+  .trail:active {
+    transform: translateY(4px);
+  }
+  .the-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0 4%;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    gap: 1rem;
+  }
+  .the-form input {
+    font-size: 15px;
+    padding: 18px 10px;
+    border-radius: 5px;
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid hsl(249, 10%, 26%);
+    background-color: white;
+  }
+
+  /* Style autofilled input fields */
+  .the-form input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset !important; /* Apply background color */
+    box-shadow: 0 0 0 1000px #fff inset !important; /* Apply background color */
+    -webkit-text-fill-color: #000 !important; /* Apply text color */
+    border: 1px solid hsl(248, 32%, 49%) !important; /* Change border color */
+    border-radius: 5px; /* Rounded corners */
+  }
+
+  /* Change the outline thickness when the input is focused */
+  .the-form input:focus {
+    outline: 1px solid hsl(248, 32%, 49%); /* Green outline */
+  }
+
+  /* Change the background color for non-autofilled inputs */
+  .the-form input:not(:-webkit-autofill) {
+    background-color: #fff; /* Light blue background for non-autofilled inputs */
+  }
+  /* nothung to change */
+  .the-form button {
+    padding: 6% 0;
+    background-color: hsl(154, 65%, 40%);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    width: 95%;
+    margin: 0 auto;
+    box-shadow: 1px 5px 3px hsla(249, 10%, 26%, 0.384);
+  }
+  .the-form button:hover {
+    background-color: hsl(154, 59%, 51%);
+  }
+  .the-form button:active {
+    background-color: hsl(154, 59%, 51%);
+    transform: translateY(4px);
+  }
+  .the-form p {
+    color: hsl(249, 10%, 26%);
+    font-size: 14px;
+    text-align: center;
+  }
+  .the-form p span {
+    color: red;
+    font-weight: 500;
+  }
+  .errorspan {
+    color: red;
+    font-size: 10px;
+    margin-top: -3%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 0 auto; */
+  }
+}
+/* the ipad */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "poppins";
+    background-image: url("assets/bg-intro-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 10%;
+    background-color: hsl(0, 100%, 74%);
+    padding: 10% 0;
+  }
+  /* the main work */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    margin: 10% 0;
+    gap: 2rem;
+  }
+  .text-area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 2rem;
+  }
+  .text-area h1 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 35px;
+  }
+  .text-area p {
+    font-size: 17px;
+    text-align: center;
+    width: 95%;
+    line-height: 1.8rem;
+  }
+  .trail-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 7%;
+  }
+  .trail {
+    padding: 5% 9px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    width: 90%;
+    box-shadow: 1px 7px 3px hsla(249, 10%, 26%, 0.384);
+    /* margin: 0 auto; */
+    /* margin-bottom: 1rem; */
+    cursor: pointer;
+  }
+  .trail p {
+    width: 68%;
+    margin: auto;
+    font-size: 17px;
+  }
+  .trail:hover {
+    background-color: hsl(246, 38%, 68%);
+  }
+  .trail:active {
+    transform: translateY(4px);
+  }
+  .the-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0 4%;
+    padding-top: 8%;
+    padding-bottom: 5%;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    gap: 1rem;
+  }
+  .the-form input {
+    font-size: 15px;
+    padding: 18px 10px;
+    border-radius: 5px;
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid hsl(249, 10%, 26%);
+    background-color: white;
+  }
+
+  /* Style autofilled input fields */
+  .the-form input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset !important; /* Apply background color */
+    box-shadow: 0 0 0 1000px #fff inset !important; /* Apply background color */
+    -webkit-text-fill-color: #000 !important; /* Apply text color */
+    border: 1px solid hsl(248, 32%, 49%) !important; /* Change border color */
+    border-radius: 5px; /* Rounded corners */
+  }
+
+  /* Change the outline thickness when the input is focused */
+  .the-form input:focus {
+    outline: 1px solid hsl(248, 32%, 49%); /* Green outline */
+  }
+
+  /* Change the background color for non-autofilled inputs */
+  .the-form input:not(:-webkit-autofill) {
+    background-color: #fff; /* Light blue background for non-autofilled inputs */
+  }
+  /* nothung to change */
+  .the-form button {
+    padding: 6% 0;
+    background-color: hsl(154, 65%, 40%);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    width: 95%;
+    margin: 0 auto;
+    box-shadow: 1px 5px 3px hsla(249, 10%, 26%, 0.384);
+  }
+  .the-form button:hover {
+    background-color: hsl(154, 59%, 51%);
+  }
+  .the-form button:active {
+    background-color: hsl(154, 59%, 51%);
+    transform: translateY(4px);
+  }
+  .the-form p {
+    color: hsl(249, 10%, 26%);
+    font-size: 14px;
+    text-align: center;
+  }
+  .the-form p span {
+    color: red;
+    font-weight: 500;
+  }
+  .errorspan {
+    color: red;
+    font-size: 10px;
+    margin-top: -3%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 0 auto; */
+  }
+}
 }
